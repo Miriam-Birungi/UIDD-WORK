@@ -1,9 +1,9 @@
-/* General Styles */
-body {
+ /* General Styles */
+ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #EBEAFF;
 }
 
 .container {
@@ -14,7 +14,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
-  background-color: #222;
+  background-color: #3D3BF3;
   color: #fff;
   padding: 15px 0;
 }
@@ -220,7 +220,7 @@ body {
 
 /* Footer */
 .footer {
-  background: #222;
+  background: #9694FF;
   color: #fff;
   text-align: center;
   padding: 20px 0;
