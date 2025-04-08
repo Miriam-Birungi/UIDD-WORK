@@ -7,14 +7,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #EBEAFF;
     color: #333;
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color: #1a1a1a;
-    color: white;
+    background-color: #3D3BF3;
+    color: #FF2929;
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -38,7 +38,7 @@ body {
 }
 
 .logo-sh {
-    color: #4a90e2;
+    color: #FF2929;
     margin-right: 5px;
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .navbar-links a:hover {
-    color: #4a90e2;
+    color: #FF2929;
 }
 
 .search-container {
@@ -76,7 +76,7 @@ body {
 }
 
 .search-container button {
-    background-color: #4a90e2;
+    background-color: #FF2929;
     color: white;
     border: none;
     padding: 8px 15px;
@@ -112,8 +112,9 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('assets/images/hero-bg.jpg');
+    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('assets/images/hero-bg.jpg'); */
+    background-color: #9694FF;
     background-size: cover;
     background-position: center;
     color: white;
@@ -143,7 +144,7 @@ body {
 }
 
 .btn-primary {
-    background-color: #4a90e2;
+    background-color: #9694FF;
     color: white;
     padding: 12px 25px;
     border-radius: 4px;
@@ -198,7 +199,7 @@ body {
 .video-container {
     position: relative;
     padding-top: 56.25%; /* 16:9 aspect ratio */
-    background-color: #f0f0f0;
+    background-color: #EBEAFF;
 }
 
 .video-container video {
@@ -214,7 +215,7 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #4a90e2;
+    background-color: #3D3BF3;
     color: white;
     padding: 5px 10px;
     border-radius: 4px;
@@ -245,7 +246,7 @@ body {
 .table-header {
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr;
-    background-color: #4a90e2;
+    background-color: #3D3BF3;
     color: white;
     padding: 15px 20px;
     font-weight: bold;
@@ -272,12 +273,12 @@ body {
 }
 
 .col-sport {
-    color: #666;
+    color: #FF2929;
     font-size: 14px;
 }
 
 .col-time {
-    color: #e74c3c;
+    color: #FF2929;
     font-weight: bold;
 }
 
@@ -298,8 +299,8 @@ body {
 .btn-outline {
     display: inline-block;
     padding: 10px 20px;
-    border: 2px solid #4a90e2;
-    color: #4a90e2;
+    border: 2px solid #FF2929;
+    color: #FF2929;
     border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
@@ -307,7 +308,8 @@ body {
 }
 
 .btn-outline:hover {
-    background-color: #4a90e2;
+    background-color: #9694FF;
+    border: 2px solid #9694FF;
     color: white;
 }
 
@@ -346,7 +348,7 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #4a90e2;
+    background-color: #3D3BF3;
     color: white;
     padding: 5px 10px;
     border-radius: 4px;
@@ -388,7 +390,7 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #1a1a1a;
+    background-color: #9694FF;
     color: white;
     padding: 60px 20px 20px;
 }
@@ -415,7 +417,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: #4a90e2;
+    color: #FF2929;
 }
 
 .social-icons a {
@@ -425,7 +427,7 @@ body {
 }
 
 .social-icons a:hover {
-    color: #4a90e2;
+    color: #FF2929;
 }
 
 /* Mobile Navigation */

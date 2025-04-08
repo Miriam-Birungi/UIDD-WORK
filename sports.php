@@ -18,7 +18,7 @@
                 <span class="logo-text">SportsHub</span>
             </div>
             <div class="navbar-links">
-                <a href="dashboard.html">Home</a>
+                <a href="dashboard.php">Home</a>
                 <a href="live-scores.php">LiveScores</a>
                 <a href="sports.php" class="active">More Sports</a>
             </div>
@@ -39,20 +39,20 @@
 
             <section class="sports-list-section">
                 <div class="sports-list-container">
-                    <div class="sport-card">
-                        <img src="images/cricket.jpg" alt="Cricket">
+                <div class="sport-card">
+                        <img src="cricket.jpg" alt="Cricket">
                         <h3>Cricket</h3>
                         <a href="cricket.html" class="view-more-btn">View More</a>
                     </div>
                     <div class="sport-card">
-                        <img src="images/rugby.jpg" alt="Rugby">
+                        <img src="rugby.jpg" alt="Rugby">
                         <h3>Rugby</h3>
                         <a href="rugby.html" class="view-more-btn">View More</a>
                     </div>
                     <div class="sport-card">
-                        <img src="images/formula1.jpg" alt="Formula 1">
-                        <h3>Formula 1</h3>
-                        <a href="formula1.html" class="view-more-btn">View More</a>
+                        <img src="golf.jpg" alt="Golf">
+                        <h3>Golf</h3>
+                        <a href="golf.html" class="view-more-btn">View More</a>
                     </div>
                     <!-- Add more sports here -->
                 </div>

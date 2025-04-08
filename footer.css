@@ -1,6 +1,6 @@
 /* Footer */
 .footer {
-    background-color: #1a1a1a;
+    background-color: #9694FF;
     color: white;
     padding: 60px 20px 20px;
 }
@@ -27,7 +27,7 @@
 }
 
 .footer-links a:hover {
-    color: #4a90e2;
+    color: #FF2929;
 }
 
 .social-icons a {
@@ -37,7 +37,7 @@
 }
 
 .social-icons a:hover {
-    color: #4a90e2;
+    color: #FF2929;
 }
 .partner-logos img {
     max-width: 100px;
