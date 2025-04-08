@@ -48,8 +48,8 @@ function checkRememberMe() {
             </div>
 
             <div class="navbar-actions">
-                <a href="watch.php" class="watch-btn">Watch Sports</a>
-                <a href="login.html" class="login-btn">Login</a>
+                
+                <a href="logout.php" class="login-btn">LogOut</a>
             </div>
 
             <button class="mobile-menu-btn">
@@ -64,7 +64,7 @@ function checkRememberMe() {
             <h1>Experience Sports Like Never Before</h1>
             <p>Your ultimate destination for live scores, news, and sports entertainment</p>
             <div class="hero-buttons">
-                <a href="sign.html" class="btn-primary">Join Now</a>
+                
                 <a href="live-scores.php" class="btn-secondary">Live Scores</a>
             </div>
         </div>
@@ -74,28 +74,28 @@ function checkRememberMe() {
     <section class="featured">
         <div class="section-header">
             <h2>Featured Content</h2>
-            <a href="#" class="view-all">View All</a>
+            
         </div>
 
         <div class="featured-grid">
             <div class="featured-item">
                 <div class="video-container">
-                    <video poster="assets/images/video1-thumb.jpg" controls>
-                        <source src="assets/videos/featured1.mp4" type="video/mp4">
-                    </video>
-                    <div class="video-overlay">Spark</div>
-                </div>
-                <h3>Championship Highlights</h3>
-            </div>
-
-            <div class="featured-item">
-                <div class="video-container">
-                    <video poster="assets/images/video2-thumb.jpg" controls>
-                        <source src="assets/videos/featured2.mp4" type="video/mp4">
+                    <video poster="partner4.png" controls>
+                        <source src="partner4.png" type="video/mp4">
                     </video>
                     <div class="video-overlay">Spark</div>
                 </div>
                 <h3>Player of the Month</h3>
+            </div>
+
+            <div class="featured-item">
+                <div class="video-container">
+                    <video poster="PL2425-SHEARERS-TOTW_LEAD-12.webp" controls>
+                        <source src="partner4.png">
+                    </video>
+                    <div class="video-overlay">Spark</div>
+                </div>
+                <h3>Team of the week</h3>
             </div>
         </div>
     </section>
@@ -147,7 +147,7 @@ function checkRememberMe() {
     <section class="latest-news">
         <div class="section-header">
             <h2>Latest News</h2>
-            <a href="news.html" class="view-all">View All</a>
+            
         </div>
 
         <div class="news-grid">
@@ -159,19 +159,19 @@ function checkRememberMe() {
                     <h3>Team Announces New Signing</h3>
                     <p class="news-date">2 hours ago</p>
                     <p class="news-excerpt">The club has confirmed the signing of the young talent from...</p>
-                    <a href="news-detail.html" class="read-more">Read More</a>
+                    
                 </div>
             </div>
 
             <div class="news-card">
-                <div class="news-image" style="background-image: url('assets/images/news2.jpg');">
+                <div class="news-image" style="background-image: url('PL2425-SHEARERS-TOTW_LEAD-12.webp');">
                     <div class="news-tag">Spark</div>
                 </div>
                 <div class="news-content">
                     <h3>Championship Preview</h3>
                     <p class="news-date">5 hours ago</p>
                     <p class="news-excerpt">Everything you need to know about the upcoming championship matches...</p>
-                    <a href="news-detail.html" class="read-more">Read More</a>
+                  
                 </div>
             </div>
         </div>

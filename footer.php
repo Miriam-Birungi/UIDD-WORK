@@ -15,9 +15,9 @@
         <div class="footer-partners">
             <h4>Partners</h4>
             <div class="partner-logos">
-                <img src="partner1.png" alt="Partner 1">
-                <img src="partner2.png" alt="Partner 2">
-                <img src="partner3.png" alt="Partner 3">
+                <img src="partner1.jpeg" alt="Partner 1">
+                <img src="partner2.jpeg" alt="Partner 2">
+                <img src="partner3.jpeg" alt="Partner 3">
             </div>
         </div>
 

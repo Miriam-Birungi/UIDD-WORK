@@ -75,7 +75,7 @@
                 <p>These terms and conditions are governed by the laws of the jurisdiction in which SportsHub operates. Any legal action or proceeding related to the website or these terms will be brought in the appropriate courts of that jurisdiction.</p>
 
                 <h3>10. Contact Us</h3>
-                <p>If you have any questions about these terms and conditions, please contact us at <a href="mailto:atuhejoel@sportshub.com">support@sportshub.com</a>.</p>
+                <p>If you have any questions about these terms and conditions, please contact us at <a href="mailto:atuhejoel112@gmail.com">support@sportshub.com</a>.</p>
             </section>
         </div>
     </main>

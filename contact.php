@@ -27,7 +27,7 @@
         </form>
 
         <h3>Other Ways to Reach Us</h3>
-        <p>Feel free to email us directly at <a href="mailto:atuhejoel@sportshub.com">support@sportshub.com</a> or contact us via our social media channels:</p>
+        <p>Feel free to email us directly at <a href="mailto:atuhejoel112@gmail.com">support@sportshub.com</a> or contact us via our social media channels:</p>
         <ul class="contact-links">
             <li><a href="https://facebook.com/sportshub" target="_blank">Facebook</a></li>
             <li><a href="https://twitter.com/sportshub" target="_blank">Twitter</a></li>

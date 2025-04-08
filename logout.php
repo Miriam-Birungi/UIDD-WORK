@@ -22,6 +22,6 @@ if (isset($_COOKIE['remember_me'])) {
 }
 
 // Redirect to login page
-header("Location: login.html");
+header("Location: index.php");
 exit();
 ?>

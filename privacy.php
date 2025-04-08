@@ -7,7 +7,7 @@
 <section class="privacy-policy">
     <div class="container">
         <h2>Privacy Policy</h2>
-        <p>Effective Date: April 2025</p>
+        <p>Effective Date: March 2025</p>
 
         <h3>Introduction</h3>
         <p>At SportsHub, we value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you use our services.</p>
@@ -33,13 +33,13 @@
         <p>We implement various security measures to protect your personal data, including encryption and access controls. However, no system is completely secure, and we cannot guarantee the absolute security of your data.</p>
 
         <h3>Your Rights</h3>
-        <p>You have the right to access, update, or delete your personal information. If you wish to exercise these rights, please contact us at <a href="mailto:support@sportshub.com">support@sportshub.com</a>.</p>
+        <p>You have the right to access, update, or delete your personal information. If you wish to exercise these rights, please contact us at <a href="mailto:atuhejoel112@gmail.com">support@sportshub.com</a>.</p>
 
         <h3>Changes to This Policy</h3>
         <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated "Effective Date". We encourage you to review this policy periodically to stay informed about how we are protecting your information.</p>
 
         <h3>Contact Us</h3>
-        <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:atuhejoel@sportshub.com">support@sportshub.com</a>.</p>
+        <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:atuhejoel112@gmail.com">support@sportshub.com</a>.</p>
     </div>
 </section>
 

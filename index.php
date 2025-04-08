@@ -31,7 +31,7 @@
         <div class="container">
             <h2>Welcome to Sports Hub</h2>
             <p>Your #1 source for live sports scores, news, highlights, and more!</p>
-            <a href="login.html" class="cta-button">Get Started</a>
+            <a href="sign.html" class="btn-primary">Join Now</a>
         </div>
     </section>
 
