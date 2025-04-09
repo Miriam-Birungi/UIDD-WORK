@@ -22,9 +22,8 @@
             <nav class="navbar-links">
                 <a href="dashboard.php">Home</a>
                 <a href="live-scores.php" class="active">LiveScores</a>
-                <a href="#">News</a>
-                <a href="#">Fixtures</a>
-                <a href="#">Standings</a>
+                <a href="fixtures.php">Fixtures</a>
+                <a href="standings.php">Standings</a>
             </nav>
 
             <!-- Right Side Actions -->
@@ -33,8 +32,7 @@
                     <input type="text" class="search-input" placeholder="Search matches..." />
                     <button class="search-btn"><i class="fas fa-search"></i></button>
                 </div>
-                <a href="watch.html" class="watch-btn">Watch Sports</a>
-                <a href="login.html" class="login-btn">Login</a>
+                <a href="logout.php" class="login-btn">LogOut</a>
                 <button class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -83,7 +81,7 @@
                     <h2 class="section-title">Upcoming Matches</h2>
                     <div class="date-selector">
                         <button class="date-btn prev-date"><i class="fas fa-chevron-left"></i></button>
-                        <span class="current-date">Today, April 08</span>
+                        <span class="current-date">Today, April 9</span>
                         <button class="date-btn next-date"><i class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
@@ -112,6 +110,8 @@
                     <!-- Match cards will be dynamically inserted here -->
                 </div>
             </section>
+
+           
         </div>
     </main>
 
@@ -119,5 +119,6 @@
     <?php include('footer.php'); ?>
 
     <script src="live-scores.js"></script>
-</body>
-</html>
+
+::contentReference[oaicite:3]{index=3}
+ 

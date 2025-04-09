@@ -1,3 +1,6 @@
+<?php include('header.php'); ?>
+<link rel="stylesheet" href="header.css">
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,26 +13,7 @@
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container navbar-container">
-            <div class="navbar-brand">
-                <span class="logo-sh">SH</span>
-                <span class="logo-text">SportsHub</span>
-            </div>
-            <div class="navbar-links">
-                <a href="dashboard.php">Home</a>
-                <a href="live-scores.php">LiveScores</a>
-                <a href="sports.php">More Sports</a>
-                <a href="terms-and-conditions.php" class="active">Terms and Conditions</a>
-            </div>
-            <div class="navbar-actions">
-                <a href="watch.html" class="watch-btn">Watch Sports</a>
-                <a href="login.html" class="login-btn">Login</a>
-            </div>
-        </div>
-    </nav>
-
+ 
     <!-- Main Content -->
     <main class="terms-main">
         <div class="container">

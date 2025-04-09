@@ -30,7 +30,7 @@
     <section class="hero">
         <div class="container">
             <h2>Welcome to Sports Hub</h2>
-            <p>Your #1 source for live sports scores, news, highlights, and more!</p>
+            <p>Your No.1 source for live sports scores, news, highlights, and more!</p>
             <a href="sign.html" class="btn-primary">Join Now</a>
         </div>
     </section>

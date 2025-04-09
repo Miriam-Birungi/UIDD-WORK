@@ -1,58 +1,174 @@
-/* General Styles for the About SportsHub Page */
-.about-sportshub {
-    padding: 50px 0;
-    background-color: #f4f4f4;
-}
-
-.about-sportshub .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.about-sportshub h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.about-sportshub p {
-    text-align: center;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    color: #555;
-}
-
-.about-sportshub h3 {
-    font-size: 1.8rem;
-    margin-top: 40px;
-    color: #333;
-}
-
-.about-sportshub ul {
-    list-style-type: none;
+/* Reset some defaults */
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
     text-align: center;
-    margin-top: 20px;
-}
-
-.about-sportshub ul li {
+  }
+  
+  /* About Section */
+  .about-sportshub {
+    background-color: #ffffff;
+    padding: 80px 0;
+  }
+  
+  .about-sportshub h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  .about-sportshub .intro-text {
     font-size: 1.1rem;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
+    line-height: 1.8;
     color: #555;
-}
-
-.about-sportshub ul li strong {
-    color: #0066cc;
-}
-
-.about-sportshub a {
+  }
+  
+  /* Grid layout for About content and image */
+  .about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 40px;
+  }
+  
+  .about-content {
+    flex: 1 1 500px;
+    text-align: left;
+  }
+  
+  .about-content h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #007bff;
+  }
+  
+  .about-content p,
+  .about-content ul {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #444;
+  }
+  
+  .about-content ul {
+    padding-left: 20px;
+  }
+  
+  .about-content li {
+    margin-bottom: 12px;
+  }
+  
+  .about-image {
+    flex: 1 1 400px;
+  }
+  
+  .featured-image {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Team Section */
+  .team-section {
+    background-color: #eef1f5;
+    padding: 80px 0;
+  }
+  
+  .team-section h3 {
+    font-size: 2.2rem;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .team-subtitle {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    color: #666;
+  }
+  
+  /* Team Grid */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .team-member {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-5px);
+  }
+  
+  .team-member-img {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+  }
+  
+  .team-member-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #007bff;
+  }
+  
+  .team-member-info p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  /* Call to Action */
+  .about-cta {
+    background: #007bff;
+    color: #fff;
+    padding: 60px 20px;
+  }
+  
+  .about-cta h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    background-color: #fff;
+    color: #007bff;
+    padding: 12px 30px;
+    border-radius: 8px;
     text-decoration: none;
-    color: #0066cc;
-}
-
-.about-sportshub a:hover {
-    color: #004a99;
-    text-decoration: underline;
-}
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  

@@ -13,9 +13,11 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 function checkRememberMe() {
-    // Validate remember me cookie
+    // Validate remember me cookie (you can implement validation logic here)
+    // For example, you may check if the cookie is valid and retrieve the user's information from the database
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,17 +40,14 @@ function checkRememberMe() {
             </div>
 
             <div class="navbar-links">
-                
                 <a href="live-scores.php">LiveScores</a>
-               
                 <div class="search-container">
-                    <input type="text" placeholder="Search...">
+                    <input type="text" id="searchInput" placeholder="Search...">
                     <button><i class="fas fa-search"></i></button>
                 </div>
             </div>
 
             <div class="navbar-actions">
-                
                 <a href="logout.php" class="login-btn">LogOut</a>
             </div>
 
@@ -64,116 +63,143 @@ function checkRememberMe() {
             <h1>Experience Sports Like Never Before</h1>
             <p>Your ultimate destination for live scores, news, and sports entertainment</p>
             <div class="hero-buttons">
-                
                 <a href="live-scores.php" class="btn-secondary">Live Scores</a>
             </div>
         </div>
     </section>
 
     <!-- Featured Content -->
-    <section class="featured">
-        <div class="section-header">
-            <h2>Featured Content</h2>
-            
+<section class="featured">
+    <div class="section-header">
+        <h2>Featured Content</h2>
+    </div>
+
+    <div class="featured-grid">
+        <div class="featured-item">
+            <div class="image-container">
+                <img src="arsenal.webp" alt="Player of the Month" class="featured-image">
+                <div class="image-overlay">Spark</div>
+            </div>
+            <h3>Champions League highlights with Declan Rice</h3>
         </div>
 
-        <div class="featured-grid">
-            <div class="featured-item">
-                <div class="video-container">
-                    <video poster="partner4.png" controls>
-                        <source src="partner4.png" type="video/mp4">
-                    </video>
-                    <div class="video-overlay">Spark</div>
-                </div>
-                <h3>Player of the Month</h3>
-            </div>
-
-            <div class="featured-item">
-                <div class="video-container">
-                    <video poster="PL2425-SHEARERS-TOTW_LEAD-12.webp" controls>
-                        <source src="partner4.png">
-                    </video>
-                    <div class="video-overlay">Spark</div>
-                </div>
-                <h3>Team of the week</h3>
-            </div>
+        <div class="featured-item">
+    <div class="image-container">
+        <!-- First Image -->
+        <div class="image-wrapper">
+            <img src="PL2425-SHEARERS-TOTW_LEAD-12.webp" alt="Team of the Week" class="featured-image">
+            <div class="image-overlay">Spark</div>
         </div>
-    </section>
+    </div>
+    <h3>
+    <a href="Team of the Week.php" class="btn-secondary">Team of the week</a></h3>
+</div>
+
+    </div>
+</section>
 
     <!-- Live Games Section -->
-    <section class="live-games">
-        <div class="section-header">
-            <h2>Live Games</h2>
-            <a href="live-scores.php" class="view-all">View All</a>
+    <<section class="live-games">
+    <div class="section-header">
+        <h2>Live Games</h2>
+        <a href="live-scores.php" class="view-all">View All</a>
+    </div>
+
+    <div class="games-table">
+        <div class="table-header">
+            <div class="col-title">Title</div>
+            <div class="col-sport">Sport</div>
+            <div class="col-time">Time</div>
+            <div class="col-action">Watch</div>
         </div>
 
-        <div class="games-table">
-            <div class="table-header">
-                <div class="col-title">Title</div>
-                <div class="col-sport">Sport</div>
-                <div class="col-time">Time</div>
-                <div class="col-action">Watch</div>
-            </div>
-
-            <div class="table-row">
-                <div class="col-title">Manchester United vs Liverpool</div>
-                <div class="col-sport">Football</div>
-                <div class="col-time">Live 35'</div>
-                <div class="col-action"><a href="#" class="watch-link">Watch Now</a></div>
-            </div>
-
-            <div class="table-row">
-                <div class="col-title">Lakers vs Warriors</div>
-                <div class="col-sport">Basketball</div>
-                <div class="col-time">Live Q3</div>
-                <div class="col-action"><a href="#" class="watch-link">Watch Now</a></div>
-            </div>
-
-            <div class="table-row">
-                <div class="col-title">Nadal vs Djokovic</div>
-                <div class="col-sport">Tennis</div>
-                <div class="col-time">Live Set 2</div>
-                <div class="col-action"><a href="#" class="watch-link">Watch Now</a></div>
-            </div>
+        <div class="table-row">
+            <div class="col-title">Paris Saint-Germain vs Aston Villa</div>
+            <div class="col-sport">Football</div>
+            <div class="col-time">Live</div>
+            <div class="col-action"><a href="#" class="watch-link">Watch Now</a></div>
         </div>
 
-        <div class="more-sports">
-            <a href="sports.php" class="btn-outline">More Sports <i class="fas fa-chevron-right"></i></a>
+        <div class="table-row">
+            <div class="col-title">Barcelona vs Borussia Dortmund</div>
+            <div class="col-sport">Football</div>
+            <div class="col-time">Live</div>
+            <div class="col-action"><a href="#" class="watch-link">Watch Now</a></div>
         </div>
-        
-    </section>
+    </div>
+
+    <div class="more-sports">
+        <a href="sports.php" class="btn-outline">More Sports <i class="fas fa-chevron-right"></i></a>
+    </div>
+</section>
 
     <!-- Latest News Section -->
     <section class="latest-news">
         <div class="section-header">
             <h2>Latest News</h2>
-            
         </div>
 
         <div class="news-grid">
             <div class="news-card">
-                <div class="news-image" style="background-image: url('assets/images/news1.jpg');">
+            <img src="arsenal3.jpg" alt="highlights" class="featured-image">
                     <div class="news-tag">Spark</div>
                 </div>
-                <div class="news-content">
-                    <h3>Team Announces New Signing</h3>
-                    <p class="news-date">2 hours ago</p>
-                    <p class="news-excerpt">The club has confirmed the signing of the young talent from...</p>
+                
+                <div class="latest-news-container">
+                    <article class="news-item">
+                        <h3 class="news-title">Champions League Quarter-Finals Kick Off</h3>
+                        <p class="news-summary">The Champions League 2025 enters its quarter-final phase with matches scheduled for April 8, 9, 15, and 16. Notable clashes include Arsenal vs Real Madrid, Bayern vs Inter, Barcelona vs Borussia Dortmund, and PSG vs Aston Villa. The first leg of these ties is underway, with teams vying for a spot in the semi-finals.</p>
+                    </article>
+                    <article class="news-item">
+                        <h3 class="news-title">Arsenal stun Real Madrid in Champions League with Declan Rice double</h3>
+                        <p class="news-summary">
+                        Arsenal midfielder Declan Rice nets two free kicks in shock 3-0 quarterfinal first-leg win against defending champions. </p>
+                    </article>
                     
-                </div>
-            </div>
+                    <article class="news-item">
+                        <h3 class="news-title">Bayern 1-2 Inter:</h3>
+                        <p class="news-summary">
+                        Davide Frattesi's 88th-minute strike gave visitors Inter a 2-1 advantage in their quarter-final against Bayern.</p>
+                    </article>
+                   
+                    <article class="news-item">
+                        <h3 class="news-title"> Paris Saint-Germain vs Aston Villa:</h3>
+                        <p class="news-summary">
+                        Paris Saint-Germain boss Luis Enrique has no issues with Marco Asensio facing his parent club in the Champions League quarter-final first leg with Aston Villa.
 
-            <div class="news-card">
-                <div class="news-image" style="background-image: url('PL2425-SHEARERS-TOTW_LEAD-12.webp');">
-                    <div class="news-tag">Spark</div>
+The Spain playmaker joined Villa on loan until the end of the season in the January transfer window and has proved a big hit, scoring eight goals in 11 games.
+
+UEFA rules state that loan players can play against their parent clubs in European competition, but Enrique is relaxed at the prospect of coming up against his player in Wednesday's first leg in the French capital.
+"It doesn't bother me at all," Enrique, whose side were crowned Ligue 1 champions at the weekend, said at a press conference. 
+
+"I'm delighted that Marco Asensio can play.
+
+"He hasn't had any game time here, so he had the option of going to Birmingham. It's good that he's playing.
+
+"I shared a lot with him in the national team. I had the opportunity to have him during a World Cup. He is a very important player for me.
+
+"He was important during last season, but also at the beginning of this season.
+
+"He is a very high-class player. He was important at the start of the season and I know him perfectly well."
+</p>
+<h3>Paris Saint-Germain vs Aston Villa. UEFA Champions League Quarter Final.
+8:00pm, Wednesday 9th April 2025.
+
+
+Parc des Princes.
+
+
+Paris Saint-Germain
+
+Aston Villa</h3>
+                    </article>
                 </div>
-                <div class="news-content">
-                    <h3>Championship Preview</h3>
-                    <p class="news-date">5 hours ago</p>
-                    <p class="news-excerpt">Everything you need to know about the upcoming championship matches...</p>
-                  
                 </div>
             </div>
+    </div>
+    
+</div>
+
         </div>
     </section>
 
@@ -181,7 +207,6 @@ function checkRememberMe() {
     <?php include('footer.php'); ?>
 
     <script src="dashboard.js"></script>
-    
 </body>
 
 </html>

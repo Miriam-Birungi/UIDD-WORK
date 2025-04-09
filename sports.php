@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>More Sports | SportsHub</title>
+    <link rel="stylesheet" href="sports.css"> <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="sports.css">
-    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
 
@@ -22,10 +21,7 @@
                 <a href="live-scores.php">LiveScores</a>
                 <a href="sports.php" class="active">More Sports</a>
             </div>
-            <div class="navbar-actions">
-                <a href="watch.html" class="watch-btn">Watch Sports</a>
-                <a href="login.html" class="login-btn">Login</a>
-            </div>
+            
         </div>
     </nav>
 
@@ -40,21 +36,20 @@
             <section class="sports-list-section">
                 <div class="sports-list-container">
                     <div class="sport-card">
-                        <img src="images/cricket.jpg" alt="Cricket">
+                        <img src="cricket.jpg" alt="Cricket">
                         <h3>Cricket</h3>
-                        <a href="cricket.html" class="view-more-btn">View More</a>
+                       
                     </div>
                     <div class="sport-card">
-                        <img src="images/rugby.jpg" alt="Rugby">
+                        <img src="rugby.jpg" alt="Rugby">
                         <h3>Rugby</h3>
-                        <a href="rugby.html" class="view-more-btn">View More</a>
+                        
                     </div>
                     <div class="sport-card">
-                        <img src="images/formula1.jpg" alt="Formula 1">
-                        <h3>Formula 1</h3>
-                        <a href="formula1.html" class="view-more-btn">View More</a>
+                        <img src="golf.jpg" alt="Formula 1">
+                        <h3>Golf</h3>
+                        
                     </div>
-                    <!-- Add more sports here -->
                 </div>
             </section>
         </div>

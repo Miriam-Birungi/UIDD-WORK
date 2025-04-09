@@ -1,8 +1,7 @@
 <?php include('header.php'); ?>
-
 <link rel="stylesheet" href="header.css"> 
 <link rel="stylesheet" href="footer.css">
-
+<link rel="stylesheet" href="privacy.css">
 <!-- Privacy Policy Section -->
 <section class="privacy-policy">
     <div class="container">

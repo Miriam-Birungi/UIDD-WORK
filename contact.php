@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="header.css"> 
 <link rel="stylesheet" href="footer.css">
-
+<link rel="stylesheet" href="contact.css">
 <!-- Contact Us Section -->
 <section class="contact-us">
     <div class="container">
