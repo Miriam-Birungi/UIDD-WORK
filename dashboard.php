@@ -1,9 +1,8 @@
+<!-- dashboard.php -->
 <?php
 session_start();
 
-// Check if user is logged in
 if (!isset($_SESSION['user_id'])) {
-    // Check for remember me cookie
     if (isset($_COOKIE['remember_me'])) {
         checkRememberMe();
     } else {
@@ -13,26 +12,24 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 function checkRememberMe() {
-    // Validate remember me cookie (you can implement validation logic here)
-    // For example, you may check if the cookie is valid and retrieve the user's information from the database
+    // Validate remember me cookie here
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SportsHub | Home</title>
-    <link rel="stylesheet" href="footer.css">
+    <title>Dashboard | SportsHub</title>
+    <link rel="stylesheet" href="dashboard-header.css">
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
+    <!-- Dashboard Header -->
+    <nav class="navbar navbar-dashboard">
         <div class="navbar-container">
             <div class="navbar-brand">
                 <span class="logo-sh">SH</span>
@@ -40,20 +37,20 @@ function checkRememberMe() {
             </div>
 
             <div class="navbar-links">
+                <a href="dashboard.php">Dashboard</a>
                 <a href="live-scores.php">LiveScores</a>
-                <div class="search-container">
-                    <input type="text" id="searchInput" placeholder="Search...">
-                    <button><i class="fas fa-search"></i></button>
-                </div>
             </div>
 
-            <div class="navbar-actions">
-                <a href="logout.php" class="login-btn">LogOut</a>
+            <div class="navbar-search">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
             </div>
 
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div class="navbar-user">
+                <span>Welcome, <?php echo $_SESSION['username'] ?? 'User'; ?></span>
+                <a href="profile.php"><i class="fas fa-user-circle"></i></a>
+                <a href="logout.php" class="logout-btn">Log Out</a>
+            </div>
         </div>
     </nav>
 
@@ -68,73 +65,66 @@ function checkRememberMe() {
         </div>
     </section>
 
-    <!-- Featured Content -->
-<section class="featured">
-    <div class="section-header">
-        <h2>Featured Content</h2>
-    </div>
+    <!-- Featured Content Section -->
+    <section class="featured">
+        <div class="section-header">
+            <h2>Featured Content</h2>
+        </div>
 
-    <div class="featured-grid">
-        <div class="featured-item">
-            <div class="image-container">
-                <img src="arsenal.webp" alt="Player of the Month" class="featured-image">
-                <div class="image-overlay">Spark</div>
+        <div class="featured-grid">
+            <div class="featured-item">
+                <div class="image-container">
+                    <img src="arsenal.webp" alt="Player of the Month">
+                    <div class="image-overlay">Spark</div>
+                </div>
+                <h3>Champions League highlights with Declan Rice</h3>
             </div>
-            <h3>Champions League highlights with Declan Rice</h3>
-        </div>
 
-        <div class="featured-item">
-    <div class="image-container">
-        <!-- First Image -->
-        <div class="image-wrapper">
-            <img src="PL2425-SHEARERS-TOTW_LEAD-12.webp" alt="Team of the Week" class="featured-image">
-            <div class="image-overlay">Spark</div>
+            <div class="featured-item">
+                <div class="image-container">
+                    <img src="PL2425-SHEARERS-TOTW_LEAD-12.webp" alt="Team of the Week">
+                    <div class="image-overlay">Spark</div>
+                </div>
+                <h3><a href="Team of the Week.php" class="btn-secondary">Team of the Week</a></h3>
+            </div>
         </div>
-    </div>
-    <h3>
-    <a href="Team of the Week.php" class="btn-secondary">Team of the week</a></h3>
-</div>
-
-    </div>
-</section>
+    </section>
 
     <!-- Live Games Section -->
-    <<section class="live-games">
-    <div class="section-header">
-        <h2>Live Games</h2>
-        <a href="live-scores.php" class="view-all">View All</a>
-    </div>
-
-    <div class="games-table">
-        <div class="table-header">
-            <div class="col-title">Title</div>
-            <div class="col-sport">Sport</div>
-            <div class="col-time">Time</div>
-            <div class="col-action">Watch</div>
+    <section class="live-games">
+        <div class="section-header">
+            <h2>Live Games</h2>
+            <a href="live-scores.php" class="view-all">View All</a>
         </div>
 
-        <div class="table-row">
-            <div class="col-title">Paris Saint-Germain vs Aston Villa</div>
-            <div class="col-sport">Football</div>
-            <div class="col-time">Live</div>
-            <div class="col-action"><a href="#" class="watch-link">Watch Now</a></div>
+        <div class="games-table">
+            <div class="table-header">
+                <div class="col-title">Title</div>
+                <div class="col-sport">Sport</div>
+                <div class="col-time">Time</div>
+                <div class="col-action">Watch</div>
+            </div>
+            <div class="table-row">
+                <div class="col-title">Paris Saint-Germain vs Aston Villa</div>
+                <div class="col-sport">Football</div>
+                <div class="col-time">Live</div>
+                <div class="col-action"><a href="#" class="watch-link">Watch Now</a></div>
+            </div>
+            <div class="table-row">
+                <div class="col-title">Barcelona vs Borussia Dortmund</div>
+                <div class="col-sport">Football</div>
+                <div class="col-time">Live</div>
+                <div class="col-action"><a href="#" class="watch-link">Watch Now</a></div>
+            </div>
         </div>
 
-        <div class="table-row">
-            <div class="col-title">Barcelona vs Borussia Dortmund</div>
-            <div class="col-sport">Football</div>
-            <div class="col-time">Live</div>
-            <div class="col-action"><a href="#" class="watch-link">Watch Now</a></div>
+        <div class="more-sports">
+            <a href="sports.php" class="btn-outline">More Sports <i class="fas fa-chevron-right"></i></a>
         </div>
-    </div>
+    </section>
 
-    <div class="more-sports">
-        <a href="sports.php" class="btn-outline">More Sports <i class="fas fa-chevron-right"></i></a>
-    </div>
-</section>
-
-    <!-- Latest News Section -->
-    <section class="latest-news">
+     <!-- Latest News Section -->
+     <section class="latest-news">
         <div class="section-header">
             <h2>Latest News</h2>
         </div>
@@ -197,10 +187,6 @@ Aston Villa</h3>
                 </div>
             </div>
     </div>
-    
-</div>
-
-        </div>
     </section>
 
     <!-- Footer -->
@@ -208,5 +194,4 @@ Aston Villa</h3>
 
     <script src="dashboard.js"></script>
 </body>
-
 </html>

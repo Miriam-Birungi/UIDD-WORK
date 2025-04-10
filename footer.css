@@ -1,55 +1,101 @@
-/* Footer */
+/* Footer Base */
 .footer {
-    background-color: #9694FF;
-    color: white;
-    padding: 60px 20px 20px;
-}
-
-.footer-content {
+    background-color: #0a0f24; /* Dark Navy */
+    color: #ffffff;
+    padding: 60px 20px 30px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Footer Top Section */
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.footer h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.footer-links a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 10px;
-    font-weight: 500;
-}
-
-.footer-links a:hover {
-    color: #FF2929;
-}
-
-.social-icons a {
-    color: white;
-    margin-right: 20px;
-    font-size: 20px;
-}
-
-.social-icons a:hover {
-    color: #FF2929;
-}
-.partner-logos img {
-    max-width: 100px;
-    margin-right: 20px;
-}
-
-.partner-logos img:last-child {
-    margin-right: 0;
-}
-
-.footer-bottom {
+    margin: auto;
+    gap: 40px;
     text-align: center;
+  }
+  
+  .footer h4 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #00ff88; /* Neon Green */
+  }
+  
+  /* Social Icons */
+  .footer-social .social-icons a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 0 12px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social .social-icons a:hover {
+    color: #00ff88;
+  }
+  
+  /* Partner Logos */
+  .footer-partners .partner-logos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-partners .partner-logos img {
+    width: 60px;
+    height: auto;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+    background: #ffffff;
+    padding: 4px;
+  }
+  
+  .footer-partners .partner-logos img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Footer Links */
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #cccccc;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #00ff88;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    border-top: 1px solid #2e3555;
+    margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid #333;
-}
+    text-align: center;
+    font-size: 0.95rem;
+    color: #aaa;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-partners .partner-logos {
+      justify-content: center;
+    }
+  }
+  
