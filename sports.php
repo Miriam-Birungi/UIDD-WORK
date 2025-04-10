@@ -17,7 +17,7 @@
                 <span class="logo-text">SportsHub</span>
             </div>
             <div class="navbar-links">
-                <a href="dashboard.html">Home</a>
+                <a href="dashboard.php">Home</a>
                 <a href="live-scores.php">LiveScores</a>
                 <a href="sports.php" class="active">More Sports</a>
             </div>
@@ -36,6 +36,7 @@
             <section class="sports-list-section">
                 <div class="sports-list-container">
                     <div class="sport-card">
+                <div class="sport-card">
                         <img src="cricket.jpg" alt="Cricket">
                         <h3>Cricket</h3>
                        

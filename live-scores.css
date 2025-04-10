@@ -17,14 +17,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  color: var(--text);
-  background-color: #f5f7fa;
-  line-height: 1.6;
+  background-color: #f4f4f4;
 }
 
 .container {
@@ -36,8 +29,8 @@ body {
 
 /* ===== Header/Navbar ===== */
 .navbar {
-  background-color: var(--primary);
-  color: white;
+  background-color: #222;
+  color: #fff;
   padding: 15px 0;
   position: sticky;
   top: 0;
@@ -359,67 +352,10 @@ body {
   }
 }
 
-/* ===== Match Card (Example) - Will be populated by JS ===== */
-.match-card {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  transition: var(--transition);
-}
-
-.match-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.match-header {
-  padding: 12px 15px;
-  background-color: var(--primary);
-  color: white;
-  font-weight: 500;
-  display: flex;
-  justify-content: space-between;
-}
-
-.match-content {
-  padding: 15px;
-}
-
-.teams {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.team {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.team-info {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.team-logo {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-}
-
-.team-name {
-  font-weight: 500;
-}
-
-.score {
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-.match-time {
+/* Footer */
+.footer {
+  background: #222;
+  color: #fff;
   text-align: center;
   margin-top: 15px;
   color: var(--text-light);
