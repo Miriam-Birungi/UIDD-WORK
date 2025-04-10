@@ -1,0 +1,201 @@
+/* Base styles */
+body {
+    font-family: 'Premier League', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.4;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* Page header styles */
+.page-hero {
+    background-color: #37003c;
+    color: white;
+    padding: 20px 0;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header__title {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+/* Tabs navigation */
+.tabs {
+    display: flex;
+    margin-top: 15px;
+}
+
+.tabs nav {
+    width: 100%;
+}
+
+/* Notification promo */
+.notification-promo {
+    background-color: #e4e4e4;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.notification-promo__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #37003c;
+}
+
+.notification-promo__title {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.notification-promo__icon-container svg {
+    width: 20px;
+    height: 20px;
+    fill: #37003c;
+}
+
+/* Filter section */
+.fixture-page-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.fixture-page-filter__fixtures-calendar {
+    display: flex;
+    align-items: center;
+}
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    background-color: #37003c;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.icon-button__icon {
+    margin-right: 8px;
+}
+
+/* Fixtures header info */
+.fixtures-header-info {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.fixtures-header-info__fixture-key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixtures-header-info__fixture-key-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    fill: #37003c;
+}
+
+/* Fixtures list section */
+.fixtures {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-header {
+        flex-direction: column;
+    }
+    
+    .fixture-page-filter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .fixture-page-filter__fixtures-calendar {
+        margin-top: 10px;
+    }
+}
+
+/* Premier League specific colors */
+.btn {
+    background-color: #37003c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #4a0052;
+}
+
+/* Tab styles */
+.mainTableTab {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+.mainTableTab.active {
+    border-bottom: 3px solid #00ff87;
+}
+
+/* Calendar sync button styles */
+.ecal-sync-widget-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #37003c;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.ecal-sync-widget-button svg {
+    margin-right: 8px;
+}
